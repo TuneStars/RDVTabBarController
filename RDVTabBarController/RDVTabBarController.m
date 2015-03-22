@@ -248,16 +248,16 @@
             }
         }
         
-        return NO;
+        return YES;
     }
     
     return YES;
 }
 
 - (void)tabBar:(RDVTabBar *)tabBar didSelectItemAtIndex:(NSInteger)index {
-    if (index < 0 || index >= [[self viewControllers] count]) {
-        return;
-    }
+//    if (index < 0 || index >= [[self viewControllers] count]) {
+//        return;
+//    }
     
     [self setSelectedIndex:index];
     
